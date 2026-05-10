@@ -1,0 +1,41 @@
+{
+  "name": "SharedFridge",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the shared fridge"
+    },
+    "owner_email": {
+      "type": "string",
+      "description": "Email of the fridge owner"
+    },
+    "collaborators": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of collaborator emails"
+    },
+    "fridge_style": {
+      "type": "string",
+      "enum": [
+        "glossy_white",
+        "stainless_steel",
+        "retro_mint",
+        "pastel_pink",
+        "matte_gray",
+        "retro_cream"
+      ],
+      "default": "stainless_steel"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "name",
+    "owner_email"
+  ]
+}

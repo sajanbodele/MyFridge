@@ -1,0 +1,57 @@
+{
+  "name": "FridgeSettings",
+  "type": "object",
+  "properties": {
+    "fridge_style": {
+      "type": "string",
+      "enum": [
+        "glossy_white",
+        "stainless_steel",
+        "retro_mint",
+        "pastel_pink",
+        "matte_gray",
+        "retro_cream"
+      ],
+      "default": "stainless_steel"
+    },
+    "show_kitchen_bg": {
+      "type": "boolean",
+      "default": false
+    },
+    "enable_sounds": {
+      "type": "boolean",
+      "default": true
+    },
+    "magnet_physics": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_smart_tv": {
+      "type": "boolean",
+      "default": false
+    },
+    "background_type": {
+      "type": "string",
+      "enum": [
+        "default",
+        "color",
+        "image",
+        "gallery"
+      ],
+      "default": "default"
+    },
+    "background_color": {
+      "type": "string",
+      "description": "Hex color for solid background"
+    },
+    "background_image": {
+      "type": "string",
+      "description": "URL for custom background image"
+    },
+    "gallery_background": {
+      "type": "string",
+      "description": "Selected gallery background ID"
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,26 @@
+{
+  "name": "FridgeItem",
+  "type": "object",
+  "properties": {
+    "fridge_id": {
+      "type": "string",
+      "description": "ID of the shared fridge this item belongs to (null for personal)"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "bookmark",
+        "sticky_note",
+        "drawing",
+        "photo",
+        "widget"
+      ],
+      "description": "Type of fridge item"
+    },
+    "title": {
+      "type": "string",
+      "description": "Title or label for the item"
+    },
+    "content": {
+      "type": "string",
+      "description": "Content - URL for bookmarks, text for notes, image URL for drawings/photos"
